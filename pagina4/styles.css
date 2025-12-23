@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #a8c5d8, #8fb4cc);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container-card {
+    background: white;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.header-banner {
+    background: linear-gradient(to right, #1e5a96 0%, #1e5a96 25%, #2d5a9e 25%, #4a7dbe 100%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.compre-passe {
+    background-color: #1e5a96;
+    border-right: 20px solid white;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%);
+    padding-right: 30px;
+}
+
+.compre-passe h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.bilhete-section {
+    background: linear-gradient(to right, #2d5a9e, #4a7dbe);
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.bilhete-img {
+    max-width: 250px;
+    height: auto;
+}
+
+.form-section {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-section legend {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2d5a9e;
+    background-color: #e8f0f8;
+    padding: 8px 15px;
+    border: 1px solid #b8d4e8;
+    border-radius: 3px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.form-control,
+.form-select {
+    font-size: 0.9rem;
+    border-radius: 3px;
+}
+
+.btn-primary {
+    background-color: #4a7dbe;
+    border-color: #4a7dbe;
+    padding: 8px 40px;
+}
+
+.btn-primary:hover {
+    background-color: #3d6ba3;
+    border-color: #3d6ba3;
+}
+
+.text-primary {
+    color: #2d5a9e !important;
+}
+
+.btn-link {
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h6 {
+    color: #333;
+    font-weight: bold;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+.border-top {
+    border-top: 2px solid #ddd !important;
+}

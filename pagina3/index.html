@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRANSURC - COMPRE PASSE - VT.NET</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container-card">
+      <div>
+        <img
+          src="/images/image.png"
+          alt="Banner TRANSURC"
+          class="banner-image"
+        />
+      </div>
+
+      <div class="date-section">
+        <script>
+          const options = {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          };
+          const today = new Date();
+          document.write(today.toLocaleDateString("pt-BR", options));
+        </script>
+      </div>
+
+      <div class="main-content">
+        <div class="header-section">
+          <h1 class="main-title">Lembrete para recuperar a senha</h1>
+          <p class="subtitle">
+            Entre com os dados abaixo para recuperar sua senha. Caso não lembre
+            do e-mail cadastrado
+            <a class="link-opacity-50-hover" href="#">
+              clique aqui para alterá-lo
+            </a>
+          </p>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="cnpj"
+              class="form-control"
+              id="floatingInputGrid"
+              placeholder="CNPJ"
+              value=""
+            />
+            <label for="floatingInputGrid"
+              >CNPJ ou CPF cadastrado (somente numeros)</label
+            >
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingInputGrid"
+              placeholder="Senha"
+              value=""
+            />
+            <label for="floatingInputGrid">e-mail cadastrado</label>
+          </div>
+        </div>
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary btn-lg submit-button">
+            Entrar
+          </button>
+          <div class="voltar">
+            <button type="submit" class="btn btn-primary btn-lg submit-button">
+              Voltar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="footer-title">
+          TRANSURC - Associação das Empresas de Transporte Coletivo Urbano de
+          Campinas
+        </p>
+        <p>
+          Rua Onze de Agosto, 757 - Centro - Campinas - SP - 13013-101 - 0800
+          0140204 - 019 3731-2600
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

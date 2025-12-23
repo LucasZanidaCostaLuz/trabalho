@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #a8c5d8, #8fb4cc);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container {
+    background: white;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.date-section {
+    text-align: right;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.main-content {
+    padding: 1.5rem 2rem;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.main-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+.logo-section {
+    text-align: right;
+}
+
+.logo-image {
+    height: 64px;
+    width: auto;
+}
+
+.logo-tagline {
+    font-size: 0.75rem;
+    color: #374151;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.option-highlight {
+    font-weight: bold;
+    color: #1f2937;
+}
+
+select.form-select {
+    max-width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+    margin-bottom: 1rem;
+}
+
+select.form-select option {
+    padding: 8px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.submit-section {
+    margin-top: 1.5rem;
+}
+
+.submit-button {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #1d4ed8;
+}
+
+.footer {
+    border-top: 1px solid #d1d5db;
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #374151;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .container-card {
+        background: white;
+        width: 100vw;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .main-title {
+        font-size: 1.5rem;
+    }
+
+    .header-section {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo-image {
+        height: 2.7rem;
+        width: auto;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .date-section {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .form-select {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: initial;
+        margin-bottom: 2rem;
+    }
+}
