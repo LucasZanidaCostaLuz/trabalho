@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: clamp(300px, 90vw, 80vw);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.main-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: rem;
+    color: blue;
+}
+
+.text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.left-column,
+.right-column {
+    width: 100%;
+    max-width: 45%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.left-column {
+    max-width: 45%;
+}
+
+.right-column {
+    max-width: 45%;
+}
+
+.left-column {
+    gap: 2rem
+}
+
+.attention {
+    color: red;
+    font-weight: bold;
+    text-align: justify;
+    width: 70%;
+}
+
+.client-ifo {
+    text-align: center;
+    width: 70%;
+    font-size: 0.9rem;
+}
+
+.right-column {
+    gap: 1rem;
+}
+
+.help {
+    text-align: center;
+    font-weight: bold;
+}
+
+.icon-link {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95vw;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .main-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .attention,
+    .client-ifo {
+        width: 90%;
+    }
+
+    .main-title {
+        font-size: 1.3rem;
+    }
+
+    .text {
+        font-size: 0.9rem;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        border-radius: 8px;
+        gap: 0.75rem;
+    }
+
+    .main-title {
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+        margin: 0 0.5rem;
+    }
+
+    .attention,
+    .client-ifo {
+        width: 95%;
+        font-size: 0.85rem;
+    }
+
+    .icon-link {
+        margin-bottom: 0.5rem;
+    }
+}

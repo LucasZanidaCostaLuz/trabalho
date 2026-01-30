@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/pagina7.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <h2 class="main-title"> ARQUIVO TEXTO DE CARTÕES PARA COMPRA</h2>
+            <p class="text">Esta rotina destina-se a empresas que necessitam de um arquivo texto contendo todos os
+                funcionários e
+                cartões. Este arquivo deverá ser manipulado pela empresa e devolvido para a Transurc.</p>
+            <div class="main-content">
+                <div class="left-column">
+                    <div class="client-info">
+                        <h5 class="info-title">CLIENTE</h5>
+                        <h5 class="info">ORTHOCLINIC CAMPINAS CLINICA</h5>
+                        <h5 class="info">ODONTOLOGICA LTDA</h5>
+                        <h5 class="info">CNPJ: 27.116.820/0001-08</h5>
+                    </div>
+                    <div class="dowload-area">
+                        <div class="dowload-status">
+                            <h4>STATUS DO ÚLTIMO DOWNLOAD</h4>
+                            <h6>nenhum dowload encontrado</h6>
+                        </div>
+                        <div>
+                            <h4>DOWNLOAD DO ARQUIVO</h4>
+                            <a class="icon-link icon-link-hover" href="#">
+                                obter o arquivo atualizado
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="upload-area">
+                        <h4>UPLOAD DO ARQUIVO</h4>
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="inputGroupFile04"
+                                aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button"
+                                id="inputGroupFileAddon04">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="attention">
+                        <h1 class="advice-title">Atenção: </h1>
+                        <p class="advise-text">Se você iniciou algum pedido anterior e digitou valores para os cartões,
+                            na
+                            importação TODOS seus
+                            cartões constam na sua base de dados e coincidem com os cartões no seu arquivo texto terão
+                            os
+                            valores regravados.
+                            Esta rotina não gera o pedido automaticamente.
+                            Será necessário entrar em cada empresa e confirmar o pedido.</p>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <h1 class="help">Ajuda</h1>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Formato do arquivo
+                            O arquivo está no formato texto e delimitado por ponto-vírgula. Está disponível no link
+                            abaixo
+                            um documento em formato PDF com instruções para geração do arquivo. <br>
+                            <a class="icon-link icon-link-hover" href="#">
+                                documentação para geração de arquivo para compra
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list-group-item">Validação
+                            O sistema verificará algumas regras no momento de devolução (upload) do arquivo. Caso alguma
+                            dessas regras falhe o sistema NÃO efetuará a importação de todos os cartões no banco de
+                            dados:
+                            O CNPJ que consta no início de cada linha deve ser da empresa, sem pontos, hífen ou barra;
+                            O número de cada cartão obedece algumas regras de verificação de dígitos. Todos os dígitos
+                            verificadores dos cartões serão checados;
+                            Cada cartão deve pertencer à empresa. Não serão aceitos cartões de outras empresas dentro do
+                            mesmo arquivo;
+                            O valor solicitado para cada cartão deve ser ou entre os valores de uma tarifa vigente de R$
+                            6,50 ou máximo R$ 600,00;
+                            O formato para o valor deve ser sem as casas decimais e 6 dígitos seja, se você necessitar
+                            inserir R$ 100,00 deverá informar 010000;
+                            O nome do funcionário não será alterado;
+                            Após importação será exibido um log com os cartões que apresentaram problemas.</li>
+                    </ol>
+                </div>
+            </div>
+            <a class="icon-link icon-link-hover" href="#">
+                Clique aqui para fechar a janela e atualizar a tela
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                    <path
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
